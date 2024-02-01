@@ -1,9 +1,10 @@
-import * as FormTypes from './formTypes';
+import { memo } from 'react';
 
-import fileUpload from './fileUpload';
+import * as FormTypes from './FormTypes';
+import FileUpload from './FileUpload';
 
 export default class FormComponents {
-    public static FileUpload = fileUpload;
+    public static FileUpload = memo(FileUpload);
 
     public static Input = ({ 
         label, 

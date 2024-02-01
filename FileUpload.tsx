@@ -1,6 +1,6 @@
-import { useRef, memo } from 'react';
+import { useRef } from 'react';
 
-import { FileUploadType } from './formTypes';
+import { FileUploadType } from './FormTypes';
 
 const FileUpload = ({
     label,
@@ -81,4 +81,4 @@ const FileUpload = ({
     );
 };
   
-export default memo(FileUpload);
+export default FileUpload;
