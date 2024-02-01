@@ -2,7 +2,7 @@
   "name": "@kctolli/formhelper",
   "author": "kctolli",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "index.ts",
   "license": "BSD-3-Clause",
