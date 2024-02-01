@@ -1,6 +1,6 @@
 {
-  "name": "formhelper",
-  "private": true,
+  "name": "@kctolli/formhelper",
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
