@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import React, { memo } from 'react';
 
 import * as FormTypes from './FormTypes';
 import FileUpload from './FileUpload';
