@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
 import { FileUploadType } from './FormTypes';
 
@@ -14,6 +14,12 @@ const FileUpload = ({
 }: FileUploadType) => {
     const fileInputRef = useRef(null);
 
+    /**
+     * Renders the file name from the input value.
+     *
+     * @param {string} val - the input value to render the file name from
+     * @return {string} the rendered file name
+     */
     const renderFileName = (val = '') => {
         let fileName = '';
         if (typeof val === 'object') {
@@ -26,6 +32,12 @@ const FileUpload = ({
         return nameArr[nameArr.length - 1] || '';
     };
 
+    /**
+     * A function to remove a file.
+     *
+     * @param {any} e - the event object
+     * @return {void} 
+     */
     const removeFile = (e: any) => {
         // @ts-ignore
         onChange('');

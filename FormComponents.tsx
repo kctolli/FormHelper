@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 
 import * as FormTypes from './FormTypes';
 import FileUpload from './FileUpload';
@@ -29,7 +29,7 @@ export default class FormComponents {
         label,
         name,
         children,
-        emptyOption = '',
+        emptyOption = 'Select ...',
         disabled = false,
         required = false,
         classes = '',
@@ -60,9 +60,7 @@ export default class FormComponents {
       </button>
     );
   
-    private static EmptyOption = ({ 
-        label = 'Select ...' 
-    } : FormTypes.OptionType) => (
+    private static EmptyOption = ({ label} : FormTypes.OptionType) => (
         <option value="">{label}</option>
     );
   
